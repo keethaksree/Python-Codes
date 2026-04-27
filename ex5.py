@@ -1,12 +1,9 @@
-R1=[int(i) for i in list(input("Enter Row1: ").split())]
-R2=[int(i) for i in list(input("Enter Row2: ").split())]
-R3=[int(i) for i in list(input("Enter Row3: ").split())]
-M=[]
-T=[[],[],[]]
-M.append(R1)
-M.append(R2)
-M.append(R3)
-for i in range(0,3):
-    for j in range(0,3):
-        T[j].append(M[i][j])
-print(T)
+t1=tuple(input("enter tuple 1:").split())
+t2=tuple(input("enter tuple 2:").split())
+l1=[]
+val=(t1,t2)
+print(val)
+for i in val:
+   for j in i:
+      l1.append(j)
+print("after flattening:",tuple(l1))
