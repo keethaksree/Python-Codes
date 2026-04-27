@@ -1,6 +1,8 @@
-t1=tuple(input("Enter: ").split())
-l=[]
-for i in t1:
-    if i not in l:
-        l.append(i)
-print("after removing duplicates:",l)
+s1=set(map(int,input("Enter the values for set 1:").split(",")))
+s2=set(map(int,input("Enter the values for set 2:").split(",")))
+print(s1)
+print(s2)
+if s2.issubset(s1):
+   print(True)
+else:
+   print(False)

@@ -1,6 +1,8 @@
-t1=tuple(input("Enter list: ").split())
-n=input("Enter element: ")
-if n in t1:
-    print("element is present")
-else:
-    print("element doesn't exist")
+a={1,2,3,4,5}
+b={6,2,4,1,8}
+x=a|b
+print("using union:",x)
+y=a&b
+print("using intersection:",y)
+z=a-b
+print("using difference:",z)
